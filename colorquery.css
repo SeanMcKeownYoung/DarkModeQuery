@@ -1,0 +1,31 @@
+		/* LIGHT/DARK SCHEME CLASSES & QUERIES */
+
+		/* DARK SCHEME HIDE - This is useful for displaying and hiding dark or light images and logos */
+			.darkScheme { width: 0px !important; display: none !important; }
+			.lightScheme { display: block !important; max-height:none !important; font-size:10px !important; }
+
+			@media (prefers-color-scheme: dark) {
+			/*DARK SCHEME RESET FOR IMAGES*/
+			.lightScheme { width: 0px !important; display: none !important; }
+			.darkScheme { display: block !important; max-height:none !important; font-size:10px !important; }
+		  	}
+
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		  }
+
+		/* LIGHT COLOR SCHEME */
+			.bodyScheme { background-color: #e6e6e3; }
+			.footerScheme {background-color: #ffffff; color: #1e1e1e;}
+			.textScheme {color: #4a4a4a}
+			.accentScheme {color:#ad0202}
+		  
+		/* DARK COLOR SCHEME */
+			@media (prefers-color-scheme: dark){ 
+			/*DARK SCHEME RESET STYLES*/
+			.bodyScheme { background-color: #2b313f; }
+			.footerScheme {background-color: #1e1e1e; color: #ffffff;}
+			.textScheme {color: #ffffff;}
+			.accentScheme {color: #ff0202;}
+		}
